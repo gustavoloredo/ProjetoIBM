@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:p="http://primefaces.org/ui">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+
+	<div>
+
+		<nav class="navbar navbar-inverse" role="navigation"
+			style="padding-left: 130px;">
+			<ul class="nav navbar-nav">
+				<li><a href="/LojaEletronicos/usersRegistration.html">Cadastro
+						de usuários</a></li>
+				<li><a href="/LojaEletronicos/productsRegistration.html">Cadastro
+						de Produtos </a></li>
+				<li><a href="/LojaEletronicos/ordersRegistration.html">Cadastro
+						de Pedidos</a></li>
+				<li class="active"><a href="/LojaEletronicos/users.html">Visualizar
+						Usuarios</a> <span class="sr-only">(current)</span></li>
+				<li><a href="/LojaEletronicos/products.html">Visualizar
+						Produtos</a></li>
+				<li><a href="/LojaEletronicos/orders.html">Visualizar
+						Pedidos</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<br />
+	<form class="form-horizontal" role="form" style="width: 50%;"
+		id="order">
+		<div class="form-group">
+			<label for="names" class="col-sm-2 control-label">Visualizar
+				Nomes</label>
+			<div class="col-sm-10">
+				<p:dataTable value="#{}">
+
+				</p:dataTable>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
